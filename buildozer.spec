@@ -13,7 +13,7 @@ source.include_exts = py,png,txt,jpg,kv
 version = 1.0
 
 # Main requirements
-requirements = python3==3.10.11,kivy==2.2.0,pillow
+requirements = python3,kivy==2.2.0,pillow
 
 # Orientation
 orientation = portrait
