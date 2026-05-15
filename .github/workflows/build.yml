@@ -14,7 +14,7 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Setup Python 3.9        # ← Change from 3.10 to 3.9
+      - name: Setup Python 3.9        
         uses: actions/setup-python@v5
         with:
           python-version: "3.9"
@@ -28,7 +28,7 @@ jobs:
             pkg-config zlib1g-dev \
             libncurses5-dev libncursesw5-dev \
             cmake libffi-dev libssl-dev \
-            libsdl2-dev libsdl2-image-dev \   # ← Add SDL2 libs
+            libsdl2-dev libsdl2-image-dev \   
             libsdl2-mixer-dev libsdl2-ttf-dev
 
       - name: Install Python packages
@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install cython==0.29.36
           pip install buildozer==1.5.0
-          pip install python-for-android==2023.9.16   # ← Pin p4a version
+          pip install python-for-android==2023.9.16  
 
       - name: Build APK
         run: |
