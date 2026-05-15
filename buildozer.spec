@@ -11,7 +11,7 @@ source.include_exts = py,png,txt
 version = 1.0
 
 requirements = python3,kivy==2.2.1,pillow
-
+p4a.branch = v2023.09.16
 orientation = portrait
 fullscreen = 1
 
